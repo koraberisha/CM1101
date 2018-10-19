@@ -173,7 +173,7 @@ def exit_leads_to(exits, direction):
     >>> exit_leads_to(rooms["Reception"]["exits"], "south")
     "MJ and Simon's room"
     >>> exit_leads_to(rooms["Reception"]["exits"], "east")
-    "you personal tutor's office"
+    "your personal tutor's office"
     >>> exit_leads_to(rooms["Tutor"]["exits"], "west")
     'Reception'
     """
@@ -307,10 +307,6 @@ def execute_drop(item_id):
         if item_id == n["id"]:
             inventory.remove(n)
             current_room["items"].append(n)
-        
-
-    
-        print("working......")
         
 
   

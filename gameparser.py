@@ -32,17 +32,11 @@ def filter_words(words, skip_words):
 
 
     new_words = []
-    #print(words)
     for word in words:
         if word != "":
             if not word in skip_words:
                 new_words.append(word.strip())
 
-
-##    for n in range(len(new_words)):
-##        
-##        if new == '' or new == ' ':
-##            new_words.remove(new)
 
     return new_words
 
